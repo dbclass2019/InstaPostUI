@@ -6,14 +6,13 @@ import { BrowserRouter, Link, Route, Switch} from 'react-router-dom';
 
 const App = () => (
   <BrowserRouter>
-    <div>
-      <nav><Link to="/home">Home</Link></nav>
+        <div>
+            <Switch>
+                <Route path="/home" component={Home}/>
+                <Route path="/" component={Login}/>
+            </Switch>
 
-
-      <Route path="/home" component={Home}/>
-      <Route path="/" component={Login}/>
-
-    </div>
+        </div>
     </BrowserRouter>
 
 //    <div>
