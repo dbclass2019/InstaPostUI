@@ -1,38 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Home from './home/home'
+import Login from './login/login'
 import { BrowserRouter, Link, Route, Switch} from 'react-router-dom';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-
-}
-
-const App2 = () => (
+const App = () => (
   <BrowserRouter>
     <div>
       <nav><Link to="/home">Home</Link></nav>
+
+
       <Route path="/home" component={Home}/>
+      <Route path="/" component={Login}/>
 
     </div>
     </BrowserRouter>
@@ -57,4 +36,4 @@ const App2 = () => (
 //    </div>
 );
 
-export default App2;
+export default App;

@@ -1,0 +1,23 @@
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80% 20%;
+    grid-template-areas:
+            "avi rest"
+            "status rest";
+}
+
+.avi {
+    grid-area: avi;
+    justify-self: center;
+}
+.status {
+    grid-area: status;
+    text-align: center;
+}
+.rest {
+    grid-area: rest;
+    text-align: left;
+}
