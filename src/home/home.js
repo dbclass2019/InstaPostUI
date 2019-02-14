@@ -22,7 +22,7 @@ class Home extends React.Component {
                 <div className="card">
                     <div className="card-body grid-container">
                         <div className='avi'><ImageAvatars/></div>
-                        <div className='status'>@janedoe </div>
+                        <div className='status'>@janedoe</div>
                         <div className='rest'>status / bio</div>
                     </div>
                 </div>
